@@ -1,0 +1,105 @@
+@font-face {
+    font-family: proxima-nova;
+    src: url(Proxima\ Nova\ Font.otf);
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: proxima-nova;
+
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+    width: 650px;
+    /* outline:1px solid red; */
+}
+.card{
+    margin-bottom: 50px;
+    width: 200px;
+    height: auto; /*height must be auto*/
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+.card-img, .card-img img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card-img{
+    display: flex;
+    height: 170px;
+    width: 100%;
+    outline:1px solid tomato;
+}
+.card-img img{
+    object-fit: cover;
+    width: 100%;
+    max-width:100%;
+}
+
+.card-title, .card-description, .card-tags{
+    padding: 10px;
+}
+.card-title{
+    font-weight: bold;
+    font-size: 18px;
+    height: auto;
+    /* outline:1px solid green; */
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+.card-description{
+    height: auto;
+    color:gray;
+    border-bottom: 1px solid gray;
+    /* outline:1px solid blue; */
+}
+
+.card-tags{
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    list-style-type: none;
+    margin:0;
+    gap:.5em;
+
+    
+}
+.card-tags li{
+    font-size: 12px;
+    padding:5px;
+    border-radius: 5px;
+    /* outline:1px solid ; */
+}
+.green{
+    background-color: rgb(186, 245, 186);
+}
+.blue{
+    background-color: lightblue;
+}
+.pink{
+    background-color: lightpink;
+}
+.violet{
+    background-color: rgb(249, 202, 255);
+}
+@media screen and (max-width:700px) {
+    .container{
+        width: 450px;
+    }
+}
+@media screen and (max-width:500px) {
+    .container{
+        flex-direction: column;
+        flex-wrap: none;
+        justify-content: none;
+        height: auto;
+        width: 200px;    }
+}
