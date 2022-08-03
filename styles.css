@@ -1,6 +1,6 @@
 @font-face {
     font-family: proxima-nova;
-    src: url(Proxima\ Nova\ Font.otf);
+    src: url(font/ProximaNova.otf);
 }
 body{
     display: flex;
@@ -9,24 +9,60 @@ body{
     flex-direction: column;
     margin: 0;
     padding: 0;
+    width: 100vw;
     font-family: proxima-nova;
 
 }
+.header p{
+    font-size: 30px;
+}
+.header h1{
+    font-size: 60px;
+    font-weight:1000;
+}
+.header .card-tags li{
+    font-size: 15px;
+    gap:.5em;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    /* outline:1px solid; */
+    background-color: rgb(243, 243, 243);
+    margin-bottom:10px;
+}
+.header img{
+    object-fit: contain;
+    width: 100%;
+    outline:1px solid;
+
+
+}
+
 .container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     height: auto;
-    width: 650px;
+    width: 750px;
+    gap:1em;
     /* outline:1px solid red; */
 }
 .card{
-    margin-bottom: 50px;
-    width: 200px;
+    /* margin-bottom: 50px; */
+    width: 230px;
     height: auto; /*height must be auto*/
     border: 1px solid grey;
     border-radius: 10px;
+}
+.card:hover{
+    box-shadow: 0 0.3rem 0.8rem rgb(0 0 0 / 12%);
+    transition-duration: .2s;
 }
 .card-img, .card-img img{
     border-top-left-radius: 10px;
@@ -34,9 +70,10 @@ body{
 }
 .card-img{
     display: flex;
+    /* justify-content: center; */
     height: 170px;
     width: 100%;
-    outline:1px solid tomato;
+    /* outline:1px solid tomato; */
 }
 .card-img img{
     object-fit: cover;
@@ -56,12 +93,24 @@ body{
     border-bottom: 1px solid gray;
 }
 .card-description{
-    height: auto;
+    height: 100px;
     color:gray;
     border-bottom: 1px solid gray;
     /* outline:1px solid blue; */
 }
+/*special css for smaller images*/
+/* .container .card:nth-child(4) .card-img img{ 
+    object-fit: contain;
+    width: 100%;
+    align-self
+} */
+.container .card:nth-child(8) .card-img img{ 
+    object-fit: contain;
 
+}
+.container .card:nth-child(12) .card-img img{ 
+    object-fit: contain;
+}
 .card-tags{
     display: flex;
     flex-wrap: wrap;
@@ -69,8 +118,6 @@ body{
     list-style-type: none;
     margin:0;
     gap:.5em;
-
-    
 }
 .card-tags li{
     font-size: 12px;
@@ -90,12 +137,17 @@ body{
 .violet{
     background-color: rgb(249, 202, 255);
 }
-@media screen and (max-width:700px) {
+.yellow{
+    background-color: rgb(252, 238, 132);
+}
+
+
+@media screen and (max-width:750px) {
     .container{
-        width: 450px;
+        width: 520px;
     }
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:530px) {
     .container{
         flex-direction: column;
         flex-wrap: none;
