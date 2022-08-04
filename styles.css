@@ -44,26 +44,68 @@ body{
 }
 
 .container{
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     height: auto;
-    width: 750px;
-    gap:1em;
-    /* outline:1px solid red; */
+    gap:2em; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-gap: 20px; */
+    /* margin-top: 50px; */
+    outline:1px solid red;
 }
-.card{
-    /* margin-bottom: 50px; */
+
+.card {
+    height: auto;
     width: 230px;
-    height: auto; /*height must be auto*/
-    border: 1px solid grey;
+    overflow: hidden;
+    perspective: 1000px;
+    background-color: transparent;
+    padding:25px;
+    border:1px solid green;
+}
+
+.card-inner {
+    display: grid;
+    /* height: auto; */
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 10px;
 }
-.card:hover{
-    box-shadow: 0 0.3rem 0.8rem rgb(0 0 0 / 12%);
-    transition-duration: .2s;
+  
+.rotate-inner{
+    transform: rotateY(180deg);
 }
+  
+.card-front, .card-back {
+    grid-area: 1/1; 
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid grey;
+    border-radius: 10px;
+
+}
+
+.card-back {
+    text-align: left;
+    /* color: gray; */
+    /* background-color: rgb(212, 212, 212); */
+    transform: rotateY(180deg);
+    /* height: 0;
+    min-height: 100%;
+    overflow: auto; */
+}
+
+
+.card-front:hover{
+    /* box-shadow: 0 0.3rem 0.8rem rgb(0 0 0 / 12%); */
+    /* transition-duration: .2s; */
+}
+
 .card-img, .card-img img{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -81,10 +123,11 @@ body{
     max-width:100%;
 }
 
-.card-title, .card-description, .card-tags{
+.card-title, .card-description, .card-tags, .card-back{
     padding: 10px;
 }
 .card-title{
+    color: black;
     font-weight: bold;
     font-size: 18px;
     height: auto;
@@ -110,6 +153,7 @@ body{
 }
 .container .card:nth-child(12) .card-img img{ 
     object-fit: contain;
+    /* border: 5px solid red; */
 }
 .card-tags{
     display: flex;
@@ -145,17 +189,19 @@ body{
     background-color: rgb(252, 238, 132);
 }
 
+a{
+ text-decoration: none;
+}
 
-@media screen and (max-width:750px) {
+
+
+@media screen and (max-width:850px) {
     .container{
-        width: 520px;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
-@media screen and (max-width:530px) {
+@media screen and (max-width:580px) {
     .container{
-        flex-direction: column;
-        flex-wrap: none;
-        justify-content: none;
-        height: auto;
-        width: 200px;    }
+        grid-template-columns: repeat(1, 1fr);
+        }
 }

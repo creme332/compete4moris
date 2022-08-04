@@ -2,9 +2,6 @@
 const tags =  document.querySelector(".card-tags").querySelectorAll("li");
 
 const cards =  document.querySelectorAll(".card");
-console.log(cards);
-//array. From
-
 
 tags.forEach(tag=>tag.addEventListener("click", function(event){
     //display all cards first
@@ -40,3 +37,20 @@ tags.forEach(tag=>tag.addEventListener("click", function(event){
     });
 
 }));
+
+cards.forEach(card=>{
+
+    console.log("front :", card.offsetHeight.toString() +"px");
+    console.log("back", card.querySelector(".card-back").style.height);
+    
+    
+    //add eventlistener to rotate card when clicked
+    card.addEventListener("click",function(){
+        const inner = card.querySelector(".card-inner");
+        if(inner.classList.contains("rotate-inner")){
+            inner.classList.remove("rotate-inner");
+        }else{
+            inner.classList.add("rotate-inner");
+        };
+    });
+});
