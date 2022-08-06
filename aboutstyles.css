@@ -1,0 +1,54 @@
+@font-face {
+    font-family: proxima-nova;
+    src: url(font/ProximaNova.otf);
+}
+
+body{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    /* width: 100vw; */
+    height: 100vh;
+    font-family: proxima-nova;
+    border:1px solid green;
+}
+
+.container{
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    justify-content: center;
+    /* outline:1px solid red; */
+}
+.container h1{
+    text-align: center;
+}
+p{
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.footer{
+    font-size: 12px;
+    justify-self: flex-end;
+    text-align: center;
+    width: 100%;
+    /* height: auto; */
+    padding: 10px;
+    padding-left: 30px;
+    background-color: rgb(225, 225, 225);
+}
+
+@media screen and (max-width:880px) {
+
+}
+@media screen and (max-width:780px) {
+
+}
+@media screen and (max-width:620px) {
+
+}
