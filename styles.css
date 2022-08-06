@@ -47,6 +47,9 @@ body{
     /* gap: 0em; */
     /* outline: 1px solid; */
 }
+.logo a{
+    text-decoration: none;
+}
 .about{
     font-weight: 2;
     text-decoration:underline;
@@ -115,7 +118,6 @@ body{
 }
 .card-img{
     display: flex;
-    /* justify-content: center; */
     height: 170px;
     width: 100%;
     /* outline:1px solid tomato; */
@@ -206,5 +208,19 @@ a{
 @media screen and (max-width:620px) {
     .container{
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media print{
+    body {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+    div.card > *{
+        display: grid;
+        page-break-inside: avoid;
+    }
+    .header .card-tags, .header .about, .card-back {
+        display: none;
     }
 }
