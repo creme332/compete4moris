@@ -1,6 +1,10 @@
 # compete4moris 🥇
 
-[compete4moris](https://github.com/creme332/compete4moris) is a curated collection of local and international competitions for Mauritian students. It aims to bridge the gap in access to extracurriculars. 
+[compete4moris](https://github.com/creme332/compete4moris) is a curated collection of local and international competitions for Mauritian students.
+
+![](history/iteration1.gif)
+
+[ ▶ View Live ](https://creme332.github.io/compete4moris/)
 
 # 🚀 Features
 - Bite-sized information about competitions.
@@ -22,7 +26,7 @@
 ### ✔ Done
 - [x] add navbar section
 - [x] Make website responsive
-- [x]Filter cards by tag feature
+- [x] Filter cards by tag feature
 - [x] add alt to images
 
 
