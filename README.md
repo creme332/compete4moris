@@ -1,7 +1,28 @@
-# moris
-Finding enrichment opportunities can be hard especially in a developing country.
+# compete4moris 🥇
 
-moris is a curated collection of local and international competitions for students. It aims to bridge the gap in access to extracurriculars. 
+[compete4moris](https://github.com/creme332/compete4moris) is a curated collection of local and international competitions for Mauritian students. It aims to bridge the gap in access to extracurriculars. 
 
-Non-Affiliation Disclaimer : Any product names, logos, brands, and other trademarks or images featured or referred to within the MORIS website (MORIS.com) are the property of their respective trademark holders. These trademark holders do not sponsor or endorse MORIS. Should you have any questions or concerns please contact MORIS at <EMAIL HERE>
+# 🚀 Features
+- Bite-sized information about competitions.
+- Filter by tag option.
+- Responsive web design.
+- Simple UI.
+
+# ⚠ Disclaimer 
+- Any product names, logos, brands, and other trademarks or images featured or referred to within this site are the property of their respective trademark holders. These trademark holders do not sponsor or endorse compete4moris. 
+
+- The information contained in compete4moris is provided on an "as is" basis with no guarantees of completeness, accuracy, usefulness or timeliness.
+
+# 🔨 To-Do
+- [ ] implement mail list subscription
+- [ ] add cost of registration to card
+- [ ] sort cards by height
+- [ ] test website on nibbler, PageSpeed Insights
+
+### ✔ Done
+- [x] add navbar section
+- [x] Make website responsive
+- [x]Filter cards by tag feature
+- [x] add alt to images
+
 
