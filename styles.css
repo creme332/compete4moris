@@ -1,6 +1,7 @@
 @font-face {
     font-family: proxima-nova;
     src: url(font/ProximaNova.otf);
+    font-display: swap;
 }
 body{
     display: flex;
