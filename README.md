@@ -18,13 +18,16 @@
 - The information contained in compete4moris is provided on an "as is" basis with no guarantees of completeness, accuracy, usefulness or timeliness.
 
 # 🔨 To-Do
-- [ ] Create a contact form
+- [ ] Add a contact form
 - [ ] Add cost of registration to card
-### SEO
-- [ ] Create a sitemap
-- [ ] Test website on nibbler, PageSpeed Insights
+### 🤖 SEO
+- [ ] Serve images in next-gen formats
+- [ ] Set an explicit width and height on image elements to reduce layout shifts and improve CLS.
+- [ ] Serve static assets with an efficient cache policy 
 
 ### ✔ Done
+- [x] Create a sitemap
+- [x] Test website on nibbler, PageSpeed Insights
 - [x] Create a newsletter mail list subscription
 - [x] add navbar section
 - [x] Make website responsive
