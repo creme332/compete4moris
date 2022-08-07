@@ -118,7 +118,7 @@ a{
 #mc_embed_signup #mc-embedded-subscribe-form input.mce_inline_error {border:2px solid #e85c41;}
 
 #branding{
-    width: 120x;
+    width: auto;
     font-size: 11px;
     /* border:1px solid; */
 }
