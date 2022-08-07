@@ -98,12 +98,7 @@ body{
 
 .card-back {
     text-align: left;
-    /* color: gray; */
-    /* background-color: rgb(212, 212, 212); */
     transform: rotateY(180deg);
-    /* height: 0;
-    min-height: 100%;
-    overflow: auto; */
 }
 
 

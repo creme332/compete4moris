@@ -50,11 +50,7 @@ a{
     padding-left: 30px;
     background-color: rgb(225, 225, 225);
 }
-.footer #madeby{
-    /* border:1px solid; */
-    /* border-top:1px solid; */
-    /* padding:5px; */
-}
+
 @media screen and (max-width:550px) {
     .container{
         width: 300px;

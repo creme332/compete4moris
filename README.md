@@ -18,12 +18,14 @@
 - The information contained in compete4moris is provided on an "as is" basis with no guarantees of completeness, accuracy, usefulness or timeliness.
 
 # 🔨 To-Do
-- [ ] implement mail list subscription
-- [ ] add cost of registration to card
-- [ ] sort cards by height
-- [ ] test website on nibbler, PageSpeed Insights
+- [ ] Create a contact form
+- [ ] Add cost of registration to card
+### SEO
+- [ ] Create a sitemap
+- [ ] Test website on nibbler, PageSpeed Insights
 
 ### ✔ Done
+- [x] Create a newsletter mail list subscription
 - [x] add navbar section
 - [x] Make website responsive
 - [x] Filter cards by tag feature
