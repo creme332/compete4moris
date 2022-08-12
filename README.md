@@ -22,7 +22,7 @@
 - [ ] Add cost of registration to card
 ### 🤖 SEO
 - [ ] Serve images in next-gen formats
-- [ ] Set an explicit width and height on image elements to reduce layout shifts and improve CLS.
+- [x] Set an explicit width and height on image elements to reduce layout shifts and improve CLS.
 - [ ] Serve static assets with an efficient cache policy 
 
 ### ✔ Done
